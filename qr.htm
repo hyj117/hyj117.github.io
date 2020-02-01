@@ -12,7 +12,7 @@
 			max-width: 1024px;
 		}
 		#text {
-			width: 95%;
+			width: 85%;
 		}
         img {
             border: 1px #ddd solid;
@@ -41,12 +41,12 @@
                     render: 'canvas',
                     size: 300,
                     ecLevel: 'Q',
-                    fill: '#233',
+                    fill: '#168',
                     background: null,
                     text: text,
                     label: '168',
                     fontname: 'sans',
-                    fontcolor: '#233',
+                    fontcolor: '#168',
                     quiet: 0,
                     mode: 2
                 };
@@ -66,7 +66,7 @@
                 window.location.hash = v;
                 qr(v);
                 if (v === "") {
-                    qrcode.innerHTML = '尼玛。。。没有内容生成个蛋啊。。。。'
+                    qrcode.innerHTML = '请先输入内容啊。。。'
                 } else {
                     qr(v);
                 }
