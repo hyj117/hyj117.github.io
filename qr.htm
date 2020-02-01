@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html">
-    <title>¶şÎ¬ÂëÉú³É</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="zh-cn">
+    <title>äºŒç»´ç ç”Ÿæˆ</title>
     <style>
         #qrcode,
 		#text {
@@ -23,7 +23,7 @@
 <body>
 
     <center>
-        <textarea id="text" type="text" placeholder="ÇëÊäÈëÄÚÈİ" rows="17" cols="17" autofocus></textarea>
+        <textarea id="text" type="text" placeholder="è¯·è¾“å…¥å†…å®¹" rows="17" cols="17" autofocus></textarea>
         <p id="qrcode"></p>
     </center>
     <script>
@@ -44,7 +44,7 @@
                     fill: '#233',
                     background: null,
                     text: text,
-                    label: 'hyj117',
+                    label: '168',
                     fontname: 'sans',
                     fontcolor: '#233',
                     quiet: 0,
@@ -66,7 +66,7 @@
                 window.location.hash = v;
                 qr(v);
                 if (v === "") {
-                    qrcode.innerHTML = 'ÄáÂê¡£¡£¡£Ã»ÓĞÄÚÈİÉú³É¸öµ°°¡¡£¡£¡£¡£'
+                    qrcode.innerHTML = 'å°¼ç›ã€‚ã€‚ã€‚æ²¡æœ‰å†…å®¹ç”Ÿæˆä¸ªè›‹å•Šã€‚ã€‚ã€‚ã€‚'
                 } else {
                     qr(v);
                 }
