@@ -1,34 +1,33 @@
 <html>
 
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>Telegram Ⱥ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>使用TWRP-recovery恢复系统后，开机密码不正确怎么办</title>
 </head>
 
 <body>
 
-<p><b>ʹ��TWRP-recovery�ָ�ϵͳ�󣬿������벻��ȷ��ô��</b><br>
+<p><b>使用TWRP-recovery恢复系统后，开机密码不正确怎么办</b><br>
 <br>
-���ڰ�׿ˢ���û���˵���ֻ����ݻָ����ٳ����������ˣ����ܶ�ʱ�����������˹ر��ֻ����룬<br>
-ֱ�ӱ��ݣ�����������ϵͳ�ָ�������Ϊһ��ok�ˣ���ʵ����˵���ָ����ϵͳ����ʹ������<br>
-��ȷ�����룬���޷�����������<br>
+对于安卓刷机用户来说，手机备份恢复是再常见不过了了，而很多时候我们忘记了关闭手机密码，<br>
+直接备份，后来进行了系统恢复，本以为一切ok了，但实际来说，恢复后的系统，即使你输入<br>
+正确的密码，都无法正常打开锁屏<br>
 <br>
-������ڻָ�ϵͳ��ʱ��������������<br>
-��Ȼ�ֱ��ķ����ǣ�����twrp-recovery�����������ʽ��data������Ȼ���������Ϳ��Խ�<br>
-��ϵͳ�ˣ��������Ļ����ֻ��ϵ��������ݺ��ļ����ᶪʧ����϶�������������Ȼ��ʱ�䱸<br>
-��ϵͳ�����<br>
+如果你在恢复系统的时候出现了以下情况<br>
+当然粗暴的方法是，进入twrp-recovery后点击清除—格式化data分区，然后重启，就可以进<br>
+入系统了，但这样的话，手机上的所有数据和文件都会丢失（你肯定不想这样，不然花时间备<br>
+份系统干嘛）。<br>
 <br>
-��ô��ô����ֻ������룬���һ������Լ��������ݺ��ļ��أ�<br>
-���ȣ����ǽ���twrp-recovery������߼�|Advanced��<br>
-Ȼ�����˵���ļ�������data��system<br>
-��������Ŀ¼����ɾ������2���ļ�<br>
+那么怎么可以只清除密码，而且还保留自己所有数据和文件呢？<br>
+首先，我们进入twrp-recovery，点击高级|Advanced。<br>
+然后，依此点击文件管理—data—system<br>
+最后，在这个目录里面删掉如下2个文件<br>
 gatekeeper.password.key<br>
 gatekeeper.pattern.key
 <br>
-����2�����Ȳ�ɾ
-locksettings.db<br>
+下面2个可先不删 locksettings.db<br>
 locksettings.db-shm<br>
-��</p>
+&nbsp;</p>
 
 </body>
 
